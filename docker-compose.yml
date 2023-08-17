@@ -2,10 +2,10 @@ version: '3'
 
 services:
   apache:
-    image: 'php:7.2-apache'
-    container_name: php
+    image: 'httpd:latest'
+    container_name: apache
     restart: always
     ports:
-      - '80:80'
+      - '8080:80'
     volumes:
-      - ./app:/var/www/html
+      - ./app:/usr/local/apache2/htdocs
