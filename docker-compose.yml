@@ -6,6 +6,6 @@ services:
     container_name: apache
     restart: always
     ports:
-      - '8080:80'
+      - '80:80'
     volumes:
       - ./app:/usr/local/apache2/htdocs
